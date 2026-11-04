@@ -8,13 +8,9 @@ Python GUIおよびC++ CLIから正常・欠陥を分類するアプリケーシ
 
 PySide6とONNX Runtimeを使用した画像分類GUI。
 
-**正常判定**
-
-![正常画像の分類結果](docs/images/good-demo.png)
-
-**欠陥判定**
-
-![欠陥画像の分類結果](docs/images/defect-demo.png)
+| 正常判定（good） | 欠陥判定（defect） |
+|:---:|:---:|
+| ![正常判定のGUI](docs/images/good-demo.png) | ![欠陥判定のGUI](docs/images/defect-demo.png) |
 
 ### デモ画像の出典
 
