@@ -4,6 +4,27 @@
 PyTorchで学習したResNet18をONNXへ変換し、
 Python GUIおよびC++ CLIから正常・欠陥を分類するアプリケーション。
 
+## GUIデモ
+
+PySide6とONNX Runtimeを使用した画像分類GUI。
+
+**正常判定**
+
+![正常画像の分類結果](docs/images/good-demo.png)
+
+**欠陥判定**
+
+![欠陥画像の分類結果](docs/images/defect-demo.png)
+
+### デモ画像の出典
+
+表示画像にはKolektor Surface-Defect Dataset 2
+（KolektorSDD2）を使用しています。
+
+- 配布元：https://www.vicos.si/resources/kolektorsdd2/
+- 画像ライセンス：https://creativecommons.org/licenses/by-nc-sa/4.0/
+- 表示用にアプリケーション内で画像をリサイズしています。
+
 ## 1. 概要
 
 工業製品の表面画像を入力し、次の2クラスを判定する。
