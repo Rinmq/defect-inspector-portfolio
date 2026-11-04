@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "dataset": "KolektorSDD2",
+  "split_manifest": "data/splits/ksdd2_v1.json",
+  "split_manifest_sha256": "7d003e91bf3448ac89be7ab0c4f5dd7ae0aacc32d749ea5fa1ed8d82b4275084",
+  "official_test_used_during_training": false,
+  "related_image_groups_verified": false,
+  "architecture": "resnet18",
+  "initial_weights": "IMAGENET1K_V1",
+  "fine_tuning": "all_layers",
+  "loss": "CrossEntropyLoss (unweighted)",
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "batch_size": 8,
+  "epochs": 12,
+  "train_horizontal_flip_probability": 0.0,
+  "model_selection": "highest validation average_precision (ties: earlier epoch)",
+  "defect_threshold": 0.5,
+  "input": {
+    "height": 608,
+    "width": 224,
+    "color_space": "RGB",
+    "layout": "NCHW",
+    "dtype": "float32",
+    "resize_method": "stretch",
+    "interpolation": "bilinear",
+    "pixel_scale": 0.00392156862745098,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "pytorch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5060"
+}

@@ -1,0 +1,41 @@
+﻿# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Dataset
+/data/raw/
+
+# C++ build and dependencies
+/cpp/build/
+/cpp/vcpkg_installed/
+/external/
+
+# Model experiments
+/artifacts/experiments/*/
+
+# Include the verified v1.0 model
+!/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/
+
+/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/*
+
+!/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/model.onnx
+!/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/model_metadata.json
+!/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/test_evaluation.json
+!/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/experiment_config.json
+!/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/onnx_export_report.json
+
+# Local review archive
+/defect_inspector_review.zip
+
+# Model weights are kept locally
+/artifacts/experiments/resnet18_ksdd2_20261102_070156_312941/model.onnx

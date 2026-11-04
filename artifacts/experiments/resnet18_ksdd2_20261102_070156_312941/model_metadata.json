@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "architecture": "resnet18",
+  "classes": {
+    "0": "good",
+    "1": "defect"
+  },
+  "defect_class_id": 1,
+  "input": {
+    "height": 608,
+    "width": 224,
+    "color_space": "RGB",
+    "layout": "NCHW",
+    "dtype": "float32",
+    "resize_method": "stretch",
+    "interpolation": "bilinear",
+    "pixel_scale": 0.00392156862745098,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "output_type": "logits",
+  "defect_threshold": 0.5,
+  "selected_epoch": 11,
+  "selection_metric": "validation_average_precision",
+  "validation_metrics": {
+    "loss": 0.04870278247067709,
+    "average_precision": 0.9733437973235015,
+    "accuracy": 0.987152034261242,
+    "defect_precision": 0.9574468085106383,
+    "defect_recall": 0.9183673469387755,
+    "defect_f1": 0.9375,
+    "confusion_matrix": {
+      "tn": 416,
+      "fp": 2,
+      "fn": 4,
+      "tp": 45
+    },
+    "threshold": 0.5
+  },
+  "onnx": {
+    "file": "model.onnx",
+    "sha256": "ad1bd6a2bb14b11c5765a7097f33a00a62390942727e723a6ff28620737ee2fa",
+    "opset": 18,
+    "batch_size": 1
+  }
+}
